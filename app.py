@@ -10,7 +10,6 @@ from datetime import datetime
 
 app = dash.Dash()
 
-serve = app.server
 
 nsdq = pd.read_csv("Data/NASDAQcompanylist.csv")
 nsdq.set_index("Symbol", inplace=True)
